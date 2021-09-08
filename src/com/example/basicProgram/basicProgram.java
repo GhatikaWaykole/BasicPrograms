@@ -3,15 +3,14 @@ import java.util.Scanner;
 
 public class basicProgram {
     public static void main(String args[]) {
-        // Program to compute the lead year
+        // Harmoinc Number Program
         int num, result=0;
-        int a=2;
+        int a=1;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number");
         num = in.nextInt();
-        for(int i=0; i<num;i++){
-            result = (int) Math.pow(a,i);
-            System.out.println(result);
+        for(int i=0; i<=num;i++){
+            System.out.println("1/"+i);
         }
 
     }
