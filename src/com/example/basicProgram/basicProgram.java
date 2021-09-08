@@ -3,15 +3,17 @@ import java.util.Scanner;
 
 public class basicProgram {
     public static void main(String args[]) {
-        // Harmoinc Number Program
-        int num, result=0;
+        // Quotient and remainder program
+        int num, num1, result=0;
         int a=1;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number");
+        System.out.println("Enter the first number");
         num = in.nextInt();
-        for(int i=0; i<=num;i++){
-            System.out.println("1/"+i);
-        }
-
+        System.out.println("Enter the second number");
+        num1 = in.nextInt();
+        int quotient = num / num1;
+        int remainder = num % num1;
+        System.out.println("quotient of numbers"+quotient+"remainder of the numbers"+remainder);
     }
 }
