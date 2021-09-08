@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 public class basicProgram {
     public static void main(String args[]) {
-        // Number is even and odd program
-        int num;
+        // Alphabet is vovel or consonant
+        char word;
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the number");
-        num = in.nextInt();
-         if(num %2 ==0)
-             System.out.println("Number is even");
+        System.out.println("Enter the word");
+         word = in.next().charAt(0);
+         if(word == 'a' || word== 'e' || word== 'i' || word== 'o' || word== 'u' )
+             System.out.println("Word is vovel");
          else
-             System.out.println("Number is odd");
+             System.out.println("Word is consonant");
     }
 }
