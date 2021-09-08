@@ -4,12 +4,15 @@ import java.util.Scanner;
 public class basicProgram {
     public static void main(String args[]) {
         // Program to compute the lead year
-        int year;
+        int num, result=0;
+        int a=2;
         Scanner in = new Scanner(System.in);
-        year = in.nextInt();
-        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
-            System.out.println("Given year is leap year");
-        else
-            System.out.println("Given year is not the leap year");
+        System.out.println("Enter the number");
+        num = in.nextInt();
+        for(int i=0; i<num;i++){
+            result = (int) Math.pow(a,i);
+            System.out.println(result);
+        }
+
     }
 }
