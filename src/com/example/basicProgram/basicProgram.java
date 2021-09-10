@@ -56,5 +56,21 @@ public class basicProgram {
             int result = (int) Math.sqrt(Math.pow(x,x)+Math.pow(y,y));
             System.out.println("euclidean distance to the point"+result);
         }
+        System.out.println("Enter the a");
+        double a = in.nextDouble();
+        System.out.println("Enter the b");
+        double b = in.nextDouble();
+        System.out.println("Enter the c");
+        double c = in.nextDouble();
+        double determinant = (b*b)-(4*a*c);
+        double sqrt = Math.sqrt(determinant);
+        if(determinant > 0){
+            double firstRoot = (-b+sqrt)/(2*a);
+            double secondRoot = (-b-sqrt)/(2*a);
+            System.out.println("first root"+firstRoot+"second root"+secondRoot);
+        }
+        else{
+            System.out.println("root"+(-b+sqrt)/(2*a));
+        }
     }
 }
