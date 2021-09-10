@@ -47,7 +47,14 @@ public class basicProgram {
                         if(array1[i]+array1[j]+array1[k] == 0)
                             System.out.println("The number having sum zero "+a+" "+b+" "+c);                    }
                 }
+
             }
+            // euclidean distance from the x and y point
+            System.out.println("Enter the x and y");
+            int x = in.nextInt();
+            int y = in.nextInt();
+            int result = (int) Math.sqrt(Math.pow(x,x)+Math.pow(y,y));
+            System.out.println("euclidean distance to the point"+result);
         }
     }
 }
