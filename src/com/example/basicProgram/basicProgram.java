@@ -19,5 +19,21 @@ public class basicProgram {
             System.out.println("Number second greater number");
         else
             System.out.println("last number greater number");
+        // print the two dimesniaonal array
+        int n=0,m=0;
+        System.out.println("Enter the number of rows and column");
+        m = in.nextInt();
+        n = in.nextInt();
+        int array[][] = new int[n][m];
+        for(int i=0; i<m;i++){
+            for(int j=0;j<n;j++) {
+                array[i][j] = in.nextInt();
+            }
+        }
+        for(int i=0; i<array.length;i++){
+            for(int j=0;j<array.length;j++) {
+                System.out.println("Elemets in array"+array[i][j]);
+            }
+        }
     }
 }
